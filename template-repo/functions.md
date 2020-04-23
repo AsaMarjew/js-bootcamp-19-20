@@ -7,6 +7,11 @@ Function setup moet wel aangemaakt worden door de gebruiker.
 1. Modularity = Componenenten die samengevoegd of gescheiden dienen te worden.
 2. Reusability = Opnieuw te gebruiken (arguments/parameters).
 
+*https://eloquentjavascript.net/03_functions.html*
+
+## Functions chapter 3
+
+
 *https://www.youtube.com/watch?v=H4awPsyugS0*
 
 ## 16.5: Higher Order Functions in JavaScript - Topics of JavaScript/ES6
