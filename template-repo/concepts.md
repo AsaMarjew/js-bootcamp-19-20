@@ -1,3 +1,5 @@
+# Introduction to JavaScript
+
 *https://eloquentjavascript.net/01_values.html*
 
 ## The basics of computer programming (Intro)
@@ -63,3 +65,55 @@ e = exponent = 2.998e8 = 299800000.
 operators = + and * symbols.
 Comparison = boolean = true/false
 Logical operators: && = and, || = or, ? = first one is true second one is false
+
+# Objects and Arrays
+
+*https://www.youtube.com/watch?v=VIQoUghHSxU*
+
+## 7.1: What is an array? - p5.js Tutorial
+Array = a list of variables in between [] and begins by 0.
+```
+var nums = [100, 25, 12, 72];
+nums[2];
+//output: 12
+```
+Example
+```
+var words = ['red', 'green', 'blue', 'yellow']
+var index = 0;
+
+function setup() {              //Execute automate
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(0);
+  
+  fill(255);
+  textSize(32);
+  text(words[index], 12, 200);
+}
+
+function mousePressed() {
+  index = index + 1;            //On pressed add 1
+  
+  if (index == words.length){   //Error handling
+    index = 0;                  //Index value reset
+  }
+}
+```
+
+*https://www.youtube.com/watch?v=-e5h4IGKZRY*
+
+## 2.3: JavaScript Objects - p5.js Tutorial
+Organize variables in different catagory's 
+Dot syntax
+```
+var circle = {
+  x: 0,
+  y: 100,
+  diameter: 50
+};
+
+ellipse(circle.x, circle.y, circle.diameter, circle.ciameter);
+```
