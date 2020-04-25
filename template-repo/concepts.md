@@ -66,6 +66,43 @@ operators = + and * symbols.
 Comparison = boolean = true/false
 Logical operators: && = and, || = or, ? = first one is true second one is false
 
+## FreeCodeCamp: Basic JavaScript
+Data types: undefined, null, boolean, string, symbol, number, and object.
+
+.push()
+Add element at the back of an array.
+```
+var arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+// arr2 now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+```
+
+.pop()
+Used to "pop" a value off of the end of an array. We can store this "popped off" value by assigning it to a variable.
+```
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(oneDown); // Returns 6
+console.log(threeArr); // Returns [1, 4]
+```
+
+.shift()
+Removes the first element of the array.
+```
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+```
+
+.unshift()
+Adds an element to the beginning of the array.
+```
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy");
+// ourArray now equals ["Happy", "J", "cat"]
+```
+
 # Objects and Arrays
 
 *https://www.youtube.com/watch?v=VIQoUghHSxU*
