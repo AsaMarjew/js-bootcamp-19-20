@@ -98,3 +98,44 @@ function multiplier(factor) {
   x => x * factor;
 }
 ```
+
+*https://eloquentjavascript.net/05_higher_order.html*
+
+## Higher-order functions - chapter 5
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+
+*https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84*
+
+## Functional programming in JavaScript
+Why: Less bugs, less time.
+Put a function inside a variable
+Composition, put more smaller function in one big function.
+Call back function, functies die in de return zit.
+
+Regular:
+```
+var animals = [
+{ name: 'Karel', species: 'rabbit' },
+{ name: 'Jaap', species: 'dog' },
+{ name: 'Linda', species: 'dog' }
+]
+
+var dogs = []
+for (var i = 0; i < animals.length; i++) {
+  if (animals[i].species === 'dog')
+    dogs.push(animals[i])
+}
+```
+
+Higher order:
+```
+var animals = [
+{ name: 'Karel', species: 'rabbit' },
+{ name: 'Jaap', species: 'dog' },
+{ name: 'Linda', species: 'dog' }
+]
+
+var dogs = animals.filter(function(animal) {
+  return animal.species === 'dog'             /*Call back function 
+})
+```
