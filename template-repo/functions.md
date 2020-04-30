@@ -139,3 +139,16 @@ var dogs = animals.filter(function(animal) {
   return animal.species === 'dog'             /*Call back function 
 })
 ```
+
+*https://www.youtube.com/watch?v=CQqwU2Ixu-U*
+
+## Closures - Part 5 of Functional Programming in JavaScript
+Function are also closures, they have acces to variables outside the function. 
+Example you don't have to give greetMe the variable me.
+```
+var me = 'Bruce Wayne'
+function greetMe() {
+  console.log('Hello, ' + me + '!')
+}
+greetMe()
+```
