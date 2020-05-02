@@ -154,3 +154,107 @@ var circle = {
 
 ellipse(circle.x, circle.y, circle.diameter, circle.ciameter);
 ```
+
+## Notes from classes
+var x = wel reasignen
+let x = wel readignen
+const x = mag niet veranderd worden
+
+```
+let x = 3
+function new (){
+  x = 4
+}
+```
+Zo vaak mogelijk const gebruiken alleen wanneer het nodig is een let gebruiken.
+Het verschil tussen let en var is de bescherming. Var is altijd opnieuw aan te passen:
+```
+var naam = "Asa"
+var naam = "Tom"
+
+let naam = "Asa"
+let naam = "Tom"  <-- Dit kan niet
+naam = "Tom"      <-- Dit wel
+```
+Makkelijke manier om te printen:
+```
+printName = (name) => {console.log(name)}
+```
+
+Executing a function is called invoking
+- named
+- invoked result in variable
+- anonymous: kan niet hergebruikt worden
+- arrow: bij es6 =>
+
+Higher order
+```
+callback function: addEventListener(  'click',  functie)
+                                      actie     aanroep
+```
+Objects
+```
+const object = {
+  key1: 'value',
+  key2: 12,
+  key3: [1, 2, 3]
+}
+```
+propert = key1: 'value'
+
+Json lijkt op objecten -> data storage
+mutable = wel aanpasbaar
+immutable = niet aanpasbaar/overschrijfbaar
+
+objecten aanpassen:
+```person.firstName = 'AndereNaam' ```
+-> je kunt niet het gehee object aanpassen alleen per property.
+
+dingen uit het object halen:
+```console.log(person.interests[1])```
+
+Methods = a function binnen een object
+```greeting: function (){
+  alert ('Hi ' + this.name);
+}
+```
+
+Execution context, hoisting, scope, closures
+lege pagina: about.blank  -> open console
+console.log(window)       -> window {parent.window.innerHeight  -> 731
+console.log(this)
+
+window  - global: browser eigenschappen
+this    - binnen object
+global  - global
+
+declaratie  en   assignment
+var course  =   'block tech'; 
+
+ge-hoist = gegevens worden naar boven gezet in het script (eigenlijk is het dat er ruimte wordt gereserveerd voor bepaalde gegevens)
+
+Global execution context
+creation phase:
+- maken global object
+- maken this
+- memory space for variables en functions
+- assign variabes a deafault value in the memory (undifined)
+Hierna enter je execution phase
+
+Function declaration  =aangemaakt
+Function call         =geroepen
+Function execution context:
+```function skills() {
+  console.log(argumets);
+}
+
+skills ('Frontend', 'Backend')
+```
+arguments is een array-like van parameters.
+
+Scope = the current context of execution.
+Hoisting = Functions worden naar boven getrokken zo wordt de code gelezen.
+Closures = 2 functions in elkaar: outer function, inner functions. Closures allows the inner fucntion to access the variables inside of its outer function. Zie het als gobal var en fncties, ze kunnen alsnog bij de global var.
+Spoce = current context:
+        - global scope (gehele script) vs. local scope (binnen blok waar gedeclareerd).
+        - function scope (binnen functie) vs. bock scope (if-statement, for-loop).
